@@ -36,8 +36,24 @@ public class Main{
         //     }
         // }
 
+        String question = "water is wet. comment.";
+        String choiceOne = "yes";
+        String choiceTwo = "no";
+        String choiceThree = "good question";
 
-        
+        String correctAnswer = choiceThree;
+
+        System.out.println(question + "\n Choices \n" + choiceOne + "\n" + choiceTwo + "\n" + choiceThree);
+
+        Scanner input = new Scanner(System.in);
+        String userAnswer = input.next();
+
+        if(userAnswer != correctAnswer.toLowerCase()){
+            System.out.println("Wrong Answer, the correct answer is " + correctAnswer);
+        }
+        else{
+            System.out.println("Right Answer, Good Job.");
+        }
 
     }
 }
