@@ -1,0 +1,95 @@
+// Assignment 2
+
+// Name: Piyush Koundal 
+
+// 2 CS - AI- B
+
+
+// Question 1: WAP to Print Hello World on console.
+
+// public class HelloWorld{
+// public static void main(String[] args){
+// System.out.println("Hello World");
+// }
+// }
+
+
+// Question 2: WAP to Print Name and Age on console.
+
+// public class Print{
+//     public static void main(String[] args){
+//         String name = "Vaishnavi Sharma";
+//         int age = 19;
+//         System.out.println("My name is "+ name + " and my age is " +age);
+//     }
+// }
+
+
+// Question 3: WAP to Print Addition of 3 integer numbers on console.
+
+// public class Addition{
+//     public static void main(String[] args){
+//         int num1 = 10, num2 = 12, num3 = 3;
+//         System.out.println( a + b + c);
+//     }
+// }
+
+
+// Question 4: WAP to take integer as input as command line argument and print it on console.
+
+// import java.util.Scanner;
+// public class number{
+//     public static void main(String[] args){
+//         System.out.println("Enter a number: ");
+//         Scanner num = new Scanner(System.in);
+//         int input = num.nextInt();
+//         System.out.println("Entered Number is: " + input);
+//     }
+// }
+
+
+// Question 5: WAP to take 3 integer as input as command line argument and Print Addition of 3 integer numbers on console.
+
+// import java.util.Scanner;
+// public class Sum{
+//     public static void main(String[] args){
+//         System.out.println("Enter 3 numbers: ");
+//         Scanner num1 = new Scanner(System.in);
+//         Scanner num2 = new Scanner(System.in);
+//         Scanner num3 = new Scanner(System.in);
+//         int input1 = num1.nextInt(), input2 = num2.nextInt(), input3 = num3.nextInt(), sum;
+//         sum = input1+ input2+ input3;
+//         System.out.println("Addition of given integer is: " + sum);
+//     }
+// }
+
+
+// Question 6: WAP to take integer as input via Scanner class and print it on console.
+
+// import java.util.Scanner;
+// public class printNo{
+//     public static void main(String[] args){
+//         System.out.println("Enter Integer: ");
+//         Scanner input = new Scanner(System.in);
+//         int num = input.nextInt();
+//         System.out.println("Entered Number is: " + num);
+//     }
+// }
+
+
+// Question 7: WAP to take Principle amount, Rate of Interest & Time via Scanner Class and calculate simple interest then print SI on Console.
+
+// import java.util.Scanner;
+// public class simpleInterest {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+//         System.out.print("Enter Principle amount, Rate of Interest, and Time (in years) separated by spaces: ");
+//         String input = scanner.nextLine();
+//         String[] values = input.split("\\s+");
+//         double principleAmount = Double.parseDouble(values[0]);
+//         double rateOfInterest = Double.parseDouble(values[1]);
+//         double timeInYears = Double.parseDouble(values[2]);
+//         double simpleInterest = (principleAmount * rateOfInterest * timeInYears) / 100;
+//         System.out.println("Simple Interest = " + simpleInterest);
+//     }
+// }

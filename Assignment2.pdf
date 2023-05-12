@@ -1,0 +1,776 @@
+// Assignment 2
+
+// Name: Vaishnavi Sharma
+
+// 2 CS - AI- B
+
+
+//Quetion 1: Java program to determine whether a number is even or odd:
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         System.out.print("Enter a number: ");
+//         int num = input.nextInt();
+//         if (num % 2 == 0) {
+//             System.out.println(num + " is even.");
+//         } else {
+//             System.out.println(num + " is odd.");
+//         }
+//         input.close();
+//     }
+// }
+
+
+// Output:
+
+// PS D:\jJk\folder4\Java-Learning> cd "d:\jJk\folder4\Java-Learning\" ; if ($?) { javac B.java } ; if ($?) { java B }
+// Enter a number: 12
+// 12 is even.
+// PS D:\jJk\folder4\Java-Learning> 
+
+
+
+//Question 2: WAP to find largest number among three numbers using java
+
+
+// import java.util.Scanner;
+
+// public class B {
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         System.out.print("Enter three numbers: ");
+//         double num1 = input.nextDouble();
+//         double num2 = input.nextDouble();
+//         double num3 = input.nextDouble();
+//         double largest = num1;
+
+//         if (num2 > largest) {
+//             largest = num2;
+//         }
+
+//         if (num3 > largest) {
+//             largest = num3;
+//         }
+
+//         System.out.println("Largest number is " + largest);
+//         input.close();
+//     }
+// }
+
+
+// Output:
+
+// PS D:\jJk\folder4\Java-Learning> cd "d:\jJk\folder4\Java-Learning\" ; if ($?) { javac B.java } ; if ($?) { java B }
+// Enter three numbers: 12 12 12
+// Largest number is 12.0
+// PS D:\jJk\folder4\Java-Learning> 
+
+
+
+//Question 3: Java program to calculate profit or loss based on the cost price and selling price entered by the user:
+
+
+// import java.util.Scanner;
+
+// public class B {
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         System.out.print("Enter cost price: ");
+//         double costPrice = input.nextDouble();
+//         System.out.print("Enter selling price: ");
+//         double sellingPrice = input.nextDouble();
+//         double profitLoss = sellingPrice - costPrice;
+
+//         if (profitLoss > 0) {
+//             System.out.println("You made a profit of " + profitLoss);
+//         } else if (profitLoss < 0) {
+//             System.out.println("You incurred a loss of " + (-1 * profitLoss));
+//         } else {
+//             System.out.println("You broke even.");
+//         }
+//         input.close();
+//     }
+// }
+
+
+// Output:
+
+// PS D:\jJk\folder4\Java-Learning> cd "d:\jJk\folder4\Java-Learning\" ; if ($?) { javac B.java } ; if ($?) { java B }
+// Enter cost price: 31
+// Enter selling price: 13
+// You incurred a loss of 18.0
+// PS D:\jJk\folder4\Java-Learning> 
+
+
+
+//Question 4: Java program to check whether a number is divisible by 5 and 11 or not:
+
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         System.out.print("Enter a number: ");
+//         int num = input.nextInt();
+        
+//         if (num % 5 == 0 && num % 11 == 0) {
+//             System.out.println(num + " is divisible by 5 and 11");
+//         } else {
+//             System.out.println(num + " is not divisible by 5 and 11");
+//         }
+//     }
+// }
+
+
+
+//Question 5: Java program that accepts three numbers and prints "All numbers are equal" if all three numbers are equal, "All numbers are different" if all three numbers are different, and "Neither all are equal or different" otherwise:
+
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         System.out.print("Enter three numbers: ");
+//         int num1 = input.nextInt();
+//         int num2 = input.nextInt();
+//         int num3 = input.nextInt();
+        
+//         if (num1 == num2 && num2 == num3) {
+//             System.out.println("All numbers are equal");
+//         } else if (num1 != num2 && num1 != num3 && num2 != num3) {
+//             System.out.println("All numbers are different");
+//         } else {
+//             System.out.println("Neither all are equal or different");
+//         }
+//     }
+// }
+
+
+
+//Question 6: Java program to check whether a year is leap year or not:
+
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         System.out.print("Enter a year: ");
+//         int year = input.nextInt();
+        
+//         if (year % 4 == 0) {
+//             if (year % 100 == 0) {
+//                 if (year % 400 == 0) {
+//                     System.out.println(year + " is a leap year");
+//                 } else {
+//                     System.out.println(year + " is not a leap year");
+//                 }
+//             } else {
+//                 System.out.println(year + " is a leap year");
+//             }
+//         } else {
+//             System.out.println(year + " is not a leap year");
+//         }
+//     }
+// }
+
+
+
+
+
+//Question 7: Java program that reads a floating-point number and prints "zero" if the number is zero. Otherwise, print "positive" or "negative":
+
+
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         System.out.print("Enter a floating-point number: ");
+//         float num = input.nextFloat();
+        
+//         if (num == 0) {
+//             System.out.println("zero");
+//         } else if (num > 0) {
+//             System.out.println("positive");
+//         } else {
+//             System.out.println("negative");
+//         }
+//     }
+// }
+
+
+//Question 8: Java program that reads in two floating-point numbers and tests whether they are the same up to three decimal places:
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+//         System.out.print("Enter a floating-point number: ");
+//         double num = input.nextDouble();
+
+//         if (num == 0) {
+//             System.out.println("zero");
+//         } else if (num > 0) {
+//             System.out.println("positive");
+//         } else {
+//             System.out.println("negative");
+//         }
+//     }
+// }
+
+
+
+//Question 9: Write a program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following: 
+
+                // Percentage >= 90%: Grade A 
+
+                // Percentage >= 80%: Grade B 
+
+                // Percentage >= 70%: Grade C 
+
+                // Percentage >= 60%: Grade D 
+
+                // Percentage >= 40%: Grade E 
+
+                // Percentage < 40%: Grade F 
+
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.print("Enter marks obtained in Physics: ");
+//         int physicsMarks = sc.nextInt();
+
+//         System.out.print("Enter marks obtained in Chemistry: ");
+//         int chemistryMarks = sc.nextInt();
+
+//         System.out.print("Enter marks obtained in Biology: ");
+//         int biologyMarks = sc.nextInt();
+
+//         System.out.print("Enter marks obtained in Mathematics: ");
+//         int mathematicsMarks = sc.nextInt();
+
+//         System.out.print("Enter marks obtained in Computer: ");
+//         int computerMarks = sc.nextInt();
+
+//         int totalMarks = physicsMarks + chemistryMarks + biologyMarks + mathematicsMarks + computerMarks;
+//         float percentage = (float)totalMarks / 5;
+
+//         System.out.println("Percentage obtained: " + percentage + "%");
+
+//         char grade;
+
+//         if (percentage >= 90) {
+//             grade = 'A';
+//         } else if (percentage >= 80) {
+//             grade = 'B';
+//         } else if (percentage >= 70) {
+//             grade = 'C';
+//         } else if (percentage >= 60) {
+//             grade = 'D';
+//         } else if (percentage >= 40) {
+//             grade = 'E';
+//         } else {
+//             grade = 'F';
+//         }
+
+//         System.out.println("Grade obtained: " + grade);
+
+//         sc.close();
+//     }
+// }
+
+
+// Question 10: WAP to check a triangle is an equilateral, isosceles or scalene
+
+
+// import java.util.Scanner;
+
+// public class A {
+//    public static void main(String[] args) {
+//       Scanner sc = new Scanner(System.in);
+//       System.out.println("Enter the lengths of three sides of the triangle: ");
+//       double side1 = sc.nextDouble();
+//       double side2 = sc.nextDouble();
+//       double side3 = sc.nextDouble();
+
+//       if (side1 == side2 && side2 == side3) {
+//          System.out.println("The triangle is an equilateral triangle.");
+//       }
+//       else if (side1 == side2 || side1 == side3 || side2 == side3) {
+//          System.out.println("The triangle is an isosceles triangle.");
+//       }
+//       else {
+//          System.out.println("The triangle is a scalene triangle.");
+//       }
+//    }
+// }
+
+
+
+// Question 11: Write a program to check whether a given character is alphabet or not.
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.print("Enter a character: ");
+
+//         // Read the input character
+//         char ch = scanner.next().charAt(0);
+
+//         // Check if the character is an alphabet
+//         if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+//             System.out.println(ch + " is an alphabet");
+//         } else {
+//             System.out.println(ch + " is not an alphabet");
+//         }
+//     }
+// }
+
+
+// Output: 
+
+// PS D:\jJk\folder4\Java-Learning> cd "d:\jJk\folder4\Java-Learning\" ; if ($?) { javac A.java } ; if ($?) { java A }
+// Enter a character: C
+// C is an alphabet
+// PS D:\jJk\folder4\Java-Learning> 
+
+
+
+// Question 12: Write a program to check whether any alphabet it is vowel or consonant. 
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.print("Enter an alphabet: ");
+
+//         // Read the input alphabet
+//         char ch = scanner.next().charAt(0);
+
+//         // Convert the alphabet to lowercase
+//         ch = Character.toLowerCase(ch);
+
+//         // Check if the alphabet is a vowel or a consonant
+//         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+//             System.out.println(ch + " is a vowel");
+//         } else {
+//             System.out.println(ch + " is a consonant");
+//         }
+//     }
+// }
+
+// Output:
+
+// PS D:\jJk\folder4\Java-Learning> cd "d:\jJk\folder4\Java-Learning\" ; if ($?) { javac A.java } ; if ($?) { java A }
+// Enter an alphabet: e
+// e is a vowel
+// PS D:\jJk\folder4\Java-Learning> 
+
+
+
+// Question 13: Write a program to check whether a given character is alphabet, digit or special character.
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.print("Enter a character: ");
+
+//         // Read the input character
+//         char ch = scanner.next().charAt(0);
+
+//         // Check if the character is an alphabet, digit, or special character
+//         if (Character.isLetter(ch)) {
+//             System.out.println(ch + " is an alphabet");
+//         } else if (Character.isDigit(ch)) {
+//             System.out.println(ch + " is a digit");
+//         } else {
+//             System.out.println(ch + " is a special character");
+//         }
+//     }
+// }
+
+
+// Output: 
+
+// PS D:\jJk\folder4\Java-Learning> cd "d:\jJk\folder4\Java-Learning\" ; if ($?) { javac A.java } ; if ($?) { java A }
+// Enter a character: J
+// J is an alphabet
+// PS D:\jJk\folder4\Java-Learning> 
+
+
+
+// Question 14: Write a program to check whether a character is uppercase or lowercase alphabet.
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.print("Enter a character: ");
+
+//         // Read the input character
+//         char ch = scanner.next().charAt(0);
+
+//         // Check if the character is an uppercase or lowercase alphabet
+//         if (ch >= 'a' && ch <= 'z') {
+//             System.out.println(ch + " is a lowercase alphabet");
+//         } else if (ch >= 'A' && ch <= 'Z') {
+//             System.out.println(ch + " is an uppercase alphabet");
+//         } else {
+//             System.out.println(ch + " is not an alphabet");
+//         }
+//     }
+// }
+
+// Output: 
+
+// PS D:\jJk\folder4\Java-Learning> cd "d:\jJk\folder4\Java-Learning\" ; if ($?) { javac A.java } ; if ($?) { java A }
+// Enter a character: j
+// j is a lowercase alphabet
+// PS D:\jJk\folder4\Java-Learning> 
+
+
+
+// Question 15:  Given the length and breadth of a rectangle, write a program to find whether the area of the rectangle is greater than its perimeter. For example, the area of the rectangle with length = 5 and breadth = 4 is greater than its perimeter.
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.print("Enter the length of the rectangle: ");
+//         double length = scanner.nextDouble();
+
+//         System.out.print("Enter the breadth of the rectangle: ");
+//         double breadth = scanner.nextDouble();
+
+//         // Calculate the area and perimeter of the rectangle
+//         double area = length * breadth;
+//         double perimeter = 2 * (length + breadth);
+
+//         // Check if the area is greater than the perimeter
+//         if (area > perimeter) {
+//             System.out.println("The area of the rectangle is greater than its perimeter.");
+//         } else {
+//             System.out.println("The area of the rectangle is not greater than its perimeter.");
+//         }
+//     }
+// }
+
+
+// Output:
+
+// PS D:\jJk\folder4\Java-Learning> cd "d:\jJk\folder4\Java-Learning\" ; if ($?) { javac A.java } ; if ($?) { java A }
+// Enter the length of the rectangle: 19
+// Enter the breadth of the rectangle: 39
+// The area of the rectangle is greater than its perimeter.
+// PS D:\jJk\folder4\Java-Learning> 
+
+// Question 16: WAP to print day name of a week day number starting Sunday as day 1.
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.print("Enter a week day number (1-7): ");
+//         int weekDayNumber = scanner.nextInt();
+
+//         // Print the day name based on the week day number
+//         switch (weekDayNumber) {
+//             case 1:
+//                 System.out.println("Sunday");
+//                 break;
+//             case 2:
+//                 System.out.println("Monday");
+//                 break;
+//             case 3:
+//                 System.out.println("Tuesday");
+//                 break;
+//             case 4:
+//                 System.out.println("Wednesday");
+//                 break;
+//             case 5:
+//                 System.out.println("Thursday");
+//                 break;
+//             case 6:
+//                 System.out.println("Friday");
+//                 break;
+//             case 7:
+//                 System.out.println("Saturday");
+//                 break;
+//             default:
+//                 System.out.println("Invalid week day number.");
+//                 break;
+//         }
+//     }
+// }
+
+
+// Output:
+
+// PS D:\jJk\folder4\Java-Learning> cd "d:\jJk\folder4\Java-Learning\" ; if ($?) { javac A.java } ; if ($?) { java A }
+// Enter a week day number (1-7): 38
+// Invalid week day number.
+// PS D:\jJk\folder4\Java-Learning> 
+
+
+// Question 17: WAP to create a basic calculator using switch.
+
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.print("Enter first number: ");
+//         double num1 = scanner.nextDouble();
+//         System.out.print("Enter second number: ");
+//         double num2 = scanner.nextDouble();
+
+//         System.out.print("Select an operation (+, -, *, /): ");
+//         char operator = scanner.next().charAt(0);
+
+//         double result;
+
+//         // Use a switch statement to perform the selected operation
+//         switch (operator) {
+//             case '+':
+//                 result = num1 + num2;
+//                 break;
+//             case '-':
+//                 result = num1 - num2;
+//                 break;
+//             case '*':
+//                 result = num1 * num2;
+//                 break;
+//             case '/':
+//                 result = num1 / num2;
+//                 break;
+//             default:
+//                 System.out.println("Invalid operator!");
+//                 return;
+//         }
+
+//         System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
+//     }
+// }
+
+
+
+// Question 18: WAP to generate random number.
+
+// import java.util.Random;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Random random = new Random();
+
+//         // Generate a random integer between 0 and 100
+//         int randomNumber = random.nextInt(101);
+
+//         System.out.println("Random number: " + randomNumber);
+//     }
+// }
+
+
+
+
+// Question 19: Write a program to find all roots of a quadratic equation.
+
+// import java.util.Scanner;
+
+// public class QuadraticEquation {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter the coefficients a, b, and c of the quadratic equation (ax^2 + bx + c): ");
+//         double a = sc.nextDouble();
+//         double b = sc.nextDouble();
+//         double c = sc.nextDouble();
+
+//         double discriminant = b * b - 4 * a * c;
+//         double root1, root2;
+
+//         if (discriminant > 0) {
+//             root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+//             root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+//             System.out.println("The quadratic equation has two distinct real roots: " + root1 + " and " + root2);
+//         } else if (discriminant == 0) {
+//             root1 = root2 = -b / (2 * a);
+//             System.out.println("The quadratic equation has a single real root: " + root1);
+//         } else {
+//             double realPart = -b / (2 * a);
+//             double imaginaryPart = Math.sqrt(-discriminant) / (2 * a);
+//             System.out.println("The quadratic equation has two complex conjugate roots: " + realPart + " + " + imaginaryPart + "i and " + realPart + " - " + imaginaryPart + "i");
+//         }
+//     }
+// }
+
+
+
+// Question 20: Write a program print total number of days in a month using switch case.
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.print("Enter the month number (1-12): ");
+//         int monthNumber = scanner.nextInt();
+
+//         // Calculate the number of days in the month
+//         int numDays;
+
+//         switch (monthNumber) {
+//             case 1:
+//                 numDays = 31;
+//                 break;
+//             case 2:
+//                 numDays = 28;
+//                 break;
+//             case 3:
+//                 numDays = 31;
+//                 break;
+//             case 4:
+//                 numDays = 30;
+//                 break;
+//             case 5:
+//                 numDays = 31;
+//                 break;
+//             case 6:
+//                 numDays = 30;
+//                 break;
+//             case 7:
+//                 numDays = 31;
+//                 break;
+//             case 8:
+//                 numDays = 31;
+//                 break;
+//             case 9:
+//                 numDays = 30;
+//                 break;
+//             case 10:
+//                 numDays = 31;
+//                 break;
+//             case 11:
+//                 numDays = 30;
+//                 break;
+//             case 12:
+//                 numDays = 31;
+//                 break;
+//             default:
+//                 System.out.println("Invalid month number.");
+//                 return;
+//         }
+
+//         System.out.println("The month " + monthNumber + " has " + numDays + " days.");
+//     }
+// }
+
+// Output:
+
+// PS D:\jJk\folder4\Java-Learning> cd "d:\jJk\folder4\Java-Learning\" ; if ($?) { javac A.java } ; if ($?) { java A }
+// Enter the month number (1-12): 12
+// The month 12 has 31 days.
+// PS D:\jJk\folder4\Java-Learning> 
+
+
+
+// Question 21: Write a program to check whether an alphabet is vowel or consonant using switch case.
+
+// import java.util.Scanner;
+
+// public class A {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.print("Enter a character: ");
+//         char ch = scanner.next().charAt(0);
+
+//         // Convert the character to lowercase
+//         ch = Character.toLowerCase(ch);
+
+//         // Check whether the character is a vowel or consonant
+//         switch (ch) {
+//             case 'a':
+//             case 'e':
+//             case 'i':
+//             case 'o':
+//             case 'u':
+//                 System.out.println(ch + " is a vowel.");
+//                 break;
+//             default:
+//                 System.out.println(ch + " is a consonant.");
+//                 break;
+//         }
+//     }
+// }
+
+
+// Output:
+
+// PS D:\jJk\folder4\Java-Learning> cd "d:\jJk\folder4\Java-Learning\" ; if ($?) { javac A.java } ; if ($?) { java A }
+// Enter a character: j
+// j is a consonant.
+// PS D:\jJk\folder4\Java-Learning> 
+
+
+
+// Question 22: WAP to print number of days of the month using switch case.
+
+// import java.util.Scanner;
+
+// public class MonthDays {
+//     public static void main(String[] args) {
+//         Scanner input = new Scanner(System.in);
+
+//         System.out.print("Enter the month (1-12): ");
+//         int month = input.nextInt();
+
+//         int days;
+
+//         switch (month) {
+//             case 2:
+//                 days = 28;
+//                 break;
+//             case 4:
+//             case 6:
+//             case 9:
+//             case 11:
+//                 days = 30;
+//                 break;
+//             default:
+//                 days = 31;
+//                 break;
+//         }
+
+//         System.out.println("The number of days in month " + month + " is " + days);
+//     }
+// }
+
+
